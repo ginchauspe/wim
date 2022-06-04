@@ -1,0 +1,11 @@
+RESOURCES:
+https://jekyllrb.com/docs/step-by-step/01-setup/
+https://shopify.github.io/liquid/basics/introduction/
+https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+https://github.com/rcvalle/jekyll-theme-semantic2
+
+COMMANDS:
+bundle exec jekyll serve --livereload
+bundle install
+bundle info --path minima // View files inside "minima" theme.
+bundle add webrick // Para el tema Doxy
