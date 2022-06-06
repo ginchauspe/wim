@@ -52,6 +52,16 @@
                 <a class="nav-search" data-toggle="modal" data-target="#modal"><img
                   src="{{ '/assets/images/search-logo.png' | relative_url }}" alt="nav search"></a>
               </li>-->
+              {% for item in site.languages %}
+              <li>
+                <a style="cursor: pointer" onclick="(function(){
+                  /*const url = updateQueryStringParameter(window.location.href, 'lang', '{{item}}');
+                  location.href = url;*/
+                  location.href = changeLanguageInURL(window.location.href, '{{item}}');
+                  return false;
+                  })(); return false;">{{ item }}</a>
+              </li>
+              {% endfor %}
             </ul>
           </nav>
 

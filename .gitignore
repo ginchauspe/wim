@@ -6,3 +6,5 @@ Gemfile.lock
 node_modules
 package-lock.json
 /dist
+assets/css/style.min.css
+assets/js/build.min.js
