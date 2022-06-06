@@ -44,7 +44,7 @@ INDEX SASS
 @import "base/base";
 @import "base/typography";
 @import "base/component";
-  
+
 /**
 * ============================
 *  7.0 Header Area
@@ -63,7 +63,7 @@ INDEX SASS
 }
 .header-navigation{
     position: relative;
-    z-index:2222 ;  
+    z-index:2222 ;
     display: table;
     width:100%;
      .navigation-box{
@@ -97,6 +97,7 @@ INDEX SASS
         .header-logo{
             margin: 10px  0;
             display: block;
+            max-width: 100px;
             @include mobile{
               margin: 8px 0;
               width: 110px;
@@ -116,7 +117,7 @@ INDEX SASS
             }
             }
           @include tablet{
-              
+
             box-shadow: $box-shadow ;
              position: absolute;
              left: 0;
@@ -146,7 +147,7 @@ INDEX SASS
                         display: none;
                     }
                   }
-                  a{ 
+                  a{
                     font-size: $font-size-default;
                     line-height: $line-height-default;
                     padding: $margin-small;
@@ -189,7 +190,7 @@ INDEX SASS
                            border-left: 15px solid transparent;
                            border-right: 15px solid transparent;
                            border-bottom: 20px solid $bg-color-default;
-                           
+
                            transition:all 0.5s ease 0s;
                        }
                        @include desktop{
@@ -203,7 +204,7 @@ INDEX SASS
                          background-color:$bg-color-default;
                        }
                        li{
-                           
+
                           transition:all 0.5s ease 0s;
                           float:none;
                           display: block;
@@ -245,7 +246,7 @@ INDEX SASS
                     i{
                         color:transparent;
                         position: relative;
-                        &:before{ 
+                        &:before{
                           content:"\f107";
                           font-family: "FontAwesome";
                           position: absolute;
@@ -261,12 +262,12 @@ INDEX SASS
                     }
                    }
                }
-              
-               
+
+
         }
-       
+
      }
-     
+
   }
 
 #modal{
@@ -400,7 +401,7 @@ INDEX SASS
         }
     }
     h3,h4{
-        
+
         font-weight: $font-weight-thin;
         color: $font-color4;
         margin-bottom: $margin-default;
@@ -413,7 +414,7 @@ INDEX SASS
         background-color: $bg-color-default;
         color: $font-color2;
     }
-} 
+}
 /**
 * ============================
 *  9.0 Page Title Area
@@ -432,7 +433,7 @@ INDEX SASS
         padding-top: 150px;
         padding-bottom: 100px;
     }
- 
+
 }
 .page-title{
     position: relative;
@@ -482,7 +483,7 @@ INDEX SASS
        .service-icon{
            img{
           transition:all 0.5s ease 0s;
-               
+
            }
        }
    }
@@ -492,7 +493,7 @@ INDEX SASS
        }
       p{
           margin: 0;
-          
+
           transition:all 0.5s ease 0s;
       }
    }
@@ -501,14 +502,14 @@ INDEX SASS
           border-color:$border-color2;
           .service-icon{
              img{
-                 
+
             transform:matrix(0.90,0.00,0.00,0.90,0,0);
             -ms-transform:matrix(0.90,0.00,0.00,0.90,0,0);
             -webkit-transform:matrix(0.90,0.00,0.00,0.90,0,0);
              }
           }
    }
-   
+
 
 }
 
@@ -552,12 +553,12 @@ position: relative;
                 position: absolute;
                 left: 0;
                 margin-top: 2px;
-             
+
             }
         }
     }
     &:hover{
-        
+
     transform:matrix(1.00,0.00,0.00,1.00,0,-5);
     -ms-transform:matrix(1.00,0.00,0.00,1.00,0,-5);
     -webkit-transform:matrix(1.00,0.00,0.00,1.00,0,-5);
@@ -621,11 +622,11 @@ position: relative;
     margin-bottom: $margin-default;
     border:$border-solid $border-color;
     display: table;
-    
+
 transition:all 0.5s ease 0s;
     width: 100%;
-    .faq-logo{                
-        float: left;        
+    .faq-logo{
+        float: left;
           transition:all 0.5s ease 0s;
          .logo-text{
              font-size: 30px;
@@ -636,8 +637,8 @@ transition:all 0.5s ease 0s;
              padding: 15px 5px;
 			  background-color: $bg-color2;
 			    width: 70px;
-				  border-radius: 50%;  
-				   
+				  border-radius: 50%;
+
         height: 70px;
          }
          .logo-image{
@@ -654,11 +655,11 @@ transition:all 0.5s ease 0s;
 		}
          }
          @include mobile{
-             display: none; 
+             display: none;
          }
     }
     .faq-content{
-      
+
 
         float: right;
         width: calc(100% - 45px);
@@ -673,7 +674,7 @@ transition:all 0.5s ease 0s;
               width:100%;
               padding:0;
           }
-    } 
+    }
 }
 
 .faq-accordion{
@@ -715,7 +716,7 @@ transition:all 0.5s ease 0s;
                  border-right: $border-solid $bg-color2;
             }
         }
-        
+
     }
     .popular-top-title{
         width: calc(100% - 44px);
@@ -731,7 +732,7 @@ transition:all 0.5s ease 0s;
     }
      .popular-article-list {
         margin:0;
-        li {   
+        li {
             margin-bottom: 5px;
             position: relative;
             padding-left: 25px;
@@ -747,8 +748,8 @@ transition:all 0.5s ease 0s;
             }
         }
         }
-	
-	
+
+
     &:hover{
         box-shadow:$box-shadow;
         transform:matrix(1.00,0.00,0.00,1.00,0,-5);
@@ -780,7 +781,7 @@ transition:all 0.5s ease 0s;
                  border-right: $border-solid $bg-color2;
             }
         }
-        
+
     }
     .popular-top-title{
         width: calc(100% - 44px);
@@ -796,7 +797,7 @@ transition:all 0.5s ease 0s;
     }
      .popular-item-list {
         margin:0;
-        li {   
+        li {
             margin-bottom: 5px;
             position: relative;
             padding-left: 25px;
@@ -812,8 +813,8 @@ transition:all 0.5s ease 0s;
             }
         }
         }
-	
-	
+
+
     &:hover{
         box-shadow:$box-shadow;
         transform:matrix(1.00,0.00,0.00,1.00,0,-5);
@@ -895,9 +896,9 @@ transition:all 0.5s ease 0s;
         width: 23px;
         height: 16px;
         display: block;
-        
+
        }
-       
+
       &:hover:before{
         filter: none;
       }
@@ -917,7 +918,7 @@ transition:all 0.5s ease 0s;
         height: 16px;
         display: block;
     }
-    
+
     &:hover:before{
         filter: none;
       }
@@ -927,7 +928,7 @@ transition:all 0.5s ease 0s;
    }
 }
 
- 
+
 
 .ef-rating,
 .ef-rating__value{
@@ -952,12 +953,12 @@ transition:all 0.5s ease 0s;
 	width:140px;
 	height: 1.5rem;
   margin-bottom: 1rem;
-} 
+}
 	.ef-rating__value {
 		height: 100%;
 		width: 0;
 		background-position: 0 -24px;
-	} 
+	}
 
 .ef-rating_1 .ef-rating__value {
 	width:28px;
@@ -985,7 +986,7 @@ transition:all 0.5s ease 0s;
 * ============================
 */
 .feature-box{
-    
+
     box-shadow: $box-shadow;
     padding: $padding-small;
     text-align: center;
@@ -999,7 +1000,7 @@ transition:all 0.5s ease 0s;
         height:60px;
         border-radius: 50px;
         background-color:$bg-color2;
-        
+
     transition:all 0.2s ease 0s;
         .feature-icon{
             img{
@@ -1023,7 +1024,7 @@ transition:all 0.5s ease 0s;
                 height: 20px;
             }
         }
-        
+
     }
     .feature-content{
         p{
@@ -1033,7 +1034,7 @@ transition:all 0.5s ease 0s;
     &:hover,.active{
         border:$border-solid $border-color;
         .feature-logo{
-            
+
         transform:matrix(1.05,0.00,0.00,1.05,0,0);
         -ms-transform:matrix(1.05,0.00,0.00,1.05,0,0);
         -webkit-transform:matrix(1.05,0.00,0.00,1.05,0,0);
@@ -1052,18 +1053,18 @@ transition:all 0.5s ease 0s;
     border:$border-solid $border-color;
     text-align: center;
     padding:40px 30px;
-    
+
     margin-bottom: $margin-default;
     transition:all 0.5s ease 0s;
     .looking-for-logo {
         margin-bottom: 25px;
         a{
-            
+
             border-radius: 50px;
             background-color: $bg-color-default;
             width: 80px;
             height: 80px;
-            
+
     border: $border-solid $border-color;
             display: block;
             margin: auto;
@@ -1083,7 +1084,7 @@ transition:all 0.5s ease 0s;
         box-shadow: $box-shadow;
         .looking-for-logo{
             img{
-                
+
             transform:matrix(0.90,0.00,0.00,0.90,0,0);
             -ms-transform:matrix(0.90,0.00,0.00,0.90,0,0);
             -webkit-transform:matrix(0.90,0.00,0.00,0.90,0,0);
@@ -1111,7 +1112,7 @@ transition:all 0.5s ease 0s;
         border-radius: 0;
       border-top-left-radius: $border-radius;
       border-bottom-left-radius: $border-radius;
-     
+
       padding: 15px;
       padding-left: 30px;
       &:focus{
@@ -1133,7 +1134,7 @@ transition:all 0.5s ease 0s;
 */
 
 .help-section {
-   
+
     @include tablet{
         margin-bottom: $margin-small;
         text-align: center;
@@ -1153,14 +1154,14 @@ transition:all 0.5s ease 0s;
 .sub-title{
     margin-bottom: $margin-default;
 }
-.form-action{ 
+.form-action{
     border: 0;
     width:100%;
     margin-bottom: $margin-default;
       .form-group{
            margin-bottom:$margin-small;
           .form-control {
-              padding: 10px 15px;               
+              padding: 10px 15px;
               border-radius:$border-radius;
               box-shadow: $box-shadow-default;
               width: 100%;
@@ -1208,7 +1209,7 @@ transition:all 0.5s ease 0s;
           z-index: 20;
           border-radius: $border-radius;
         }
-        
+
         &:before {
           content: '\f0c1';
           font-family: "FontAwesome";
@@ -1241,7 +1242,7 @@ transition:all 0.5s ease 0s;
           width: 100%;
         }
       }
-  
+
   }
 
 
@@ -1308,7 +1309,7 @@ transition:all 0.5s ease 0s;
                     display: block;
                     float: left;
                     margin-right: 10px;
-                    margin-top: 11px;                
+                    margin-top: 11px;
                 }
                 .changelog-bug{
                     width: 18px;
@@ -1318,9 +1319,9 @@ transition:all 0.5s ease 0s;
                     display: block;
                     float: left;
                     margin-right: 10px;
-                    margin-top: 9px;                   
+                    margin-top: 9px;
                 }
-   
+
         }
     }
 }
@@ -1342,7 +1343,7 @@ transition:all 0.5s ease 0s;
         border:$border-solid $border-color;
         border-radius: 50px;
         text-align: center;
-        
+
     }
     .privacy-policy-content{
         width:calc(100% - 60px);
@@ -1358,7 +1359,7 @@ transition:all 0.5s ease 0s;
            margin-bottom: $margin-default;
         }
         .privacy-policy-list{
-            
+
             li{
                 &:before{
                     content: "\f111";
@@ -1434,14 +1435,14 @@ transition:all 0.5s ease 0s;
               position: relative;
               bottom: 2px;
           }
-            
+
         &:last-child{
             border:0;
         }
         }
     }
   }
-  
+
   .blog-spacing {
     margin-bottom: $margin-large;
     @include desktop{
@@ -1451,7 +1452,7 @@ transition:all 0.5s ease 0s;
         margin-bottom: $margin-default;
     }
   }
-  
+
   .page-navigation .pagination {
     margin: 0;
     li {
@@ -1463,7 +1464,7 @@ transition:all 0.5s ease 0s;
         border-radius: 0 !important;
         border: $border-solid $border-color;
         padding: 5px 30px;
-        
+
       }
       &:first-child, &:last-child {
         a{
@@ -1473,7 +1474,7 @@ transition:all 0.5s ease 0s;
       }
     }
   }
-  
+
   .single-post {
     .single-img {
       position: relative;
@@ -1581,7 +1582,7 @@ transition:all 0.5s ease 0s;
       }
     }
   }
-  
+
   .single-admin {
     position: relative;
     display: table;
@@ -1591,7 +1592,7 @@ transition:all 0.5s ease 0s;
       width: 130px;
       float: left;
       @include desktop{
-        
+
         width: 100px;
     }
     }
@@ -1618,7 +1619,7 @@ transition:all 0.5s ease 0s;
     }
 
   }
-  
+
   .page-pagination {
     .pagination {
       margin-bottom: 30px;
@@ -1654,16 +1655,16 @@ transition:all 0.5s ease 0s;
     width: 100%;
     margin-bottom: 35px;
   }
-  
+
   .comment-wrapper {
     padding-left: 50px;
   }
-  
+
   .single-comment-img {
     width: 68px;
     float: left;
   }
-  
+
   .single-comment-desc {
     width: calc(100% - 68px);
     float: left;
@@ -1686,7 +1687,7 @@ transition:all 0.5s ease 0s;
       line-height: $line-height-default;
     }
   }
-  
+
 /**
 * ============================
 *  23.0 Sidebar Area
@@ -1697,7 +1698,7 @@ transition:all 0.5s ease 0s;
 .sidebar-title {
     margin-bottom: $margin-small;
   }
-  
+
   .search-form-widget {
     display: block;
     input[type="text"] {
@@ -1720,7 +1721,7 @@ transition:all 0.5s ease 0s;
       }
     }
   }
-  
+
   .category-widget {
     margin: 0;
     li {
@@ -1748,7 +1749,7 @@ transition:all 0.5s ease 0s;
       }
     }
   }
-  
+
   .recent-widget {
     display: block;
     .recent-wrapper {
@@ -1785,7 +1786,7 @@ transition:all 0.5s ease 0s;
       }
     }
   }
-  
+
   .tag-widget {
     margin: 0;
     li {
@@ -1806,7 +1807,7 @@ transition:all 0.5s ease 0s;
       }
     }
   }
-  
+
   .sidebar-widget {
     margin-bottom: $margin-large;
     @include desktop{
@@ -1962,7 +1963,7 @@ transition:all 0.5s ease 0s;
         }
       }
       &:nth-child(even) .timeline-content {
-        left: 35px;		
+        left: 35px;
         &::before {
 
             left: -15px;
@@ -1985,10 +1986,10 @@ transition:all 0.5s ease 0s;
       }
       p {
           margin:0;
-		  
+
       }
   }
-  
+
   .timeline ul li {
     &::after {
       transition: background .5s ease-in-out;
@@ -2003,12 +2004,12 @@ transition:all 0.5s ease 0s;
     }
     &:nth-child(even) .timeline-content {
       transform: translate3d(200px, 0, 0);
-      
+
       margin-right: $margin-default;
     }
     &:nth-child(odd) .timeline-content {
       transform: translate3d(-200px, 0, 0);
-      
+
       margin-left: $margin-small;
     }
     &.in-view .timeline-content {
@@ -2050,7 +2051,7 @@ transition:all 0.5s ease 0s;
       }
     }
   }
-  
+
 
   @media screen and (max-width: 767px) {
     .timeline ul li {
@@ -2062,7 +2063,7 @@ transition:all 0.5s ease 0s;
       .timeline-content {
         width: 100%;
       }
-	      &:nth-child(even) .timeline-content {       
+	      &:nth-child(even) .timeline-content {
       left: 0;
 	  margin:0;
 	  overflow:hidden;
@@ -2130,7 +2131,7 @@ transition:all 0.5s ease 0s;
           }
     }
     &:hover{
-        
+
         transform:matrix(1.00,0.00,0.00,1.00,0,-5);
         -ms-transform:matrix(1.00,0.00,0.00,1.00,0,-5);
         -webkit-transform:matrix(1.00,0.00,0.00,1.00,0,-5);
@@ -2264,10 +2265,10 @@ ul#results-container {
       font-size: 18px;
       margin-top: 0px;
       display: table;
-    
+
     }
   }
-  p {   
+  p {
     margin: 0;
     font-weight: 300;
     font-size: 14px;
@@ -2291,18 +2292,18 @@ div#results-container {
 select:hover {
   cursor: pointer!important;
 }
- 
+
 .topics-service-area {
 	column-count: 3;
 	column-gap: 30px;
 	height: calc(100% - 2px);
-	@include desktop{ 
+	@include desktop{
 	column-count: 2;
 	}
-	@include tablet{ 
+	@include tablet{
 	column-count: 1;
 	}
-	@include mobile{ 
+	@include mobile{
 	column-count: 1;
 	}
 	article {
@@ -2327,7 +2328,7 @@ select:hover {
     border-bottom: 1px solid darken($bg-color3, 10%);
     display: block;
     padding: 5px 15px;
-    background: $bg-color3;   
+    background: $bg-color3;
     line-height: 2;
 	}
 }
@@ -2361,7 +2362,7 @@ h2 a.header-link {
 	&:hover {
 		color: #4a4a4a;
 		opacity: 0.4;
-		transition: opacity ease .2s,color ease .2s;		
+		transition: opacity ease .2s,color ease .2s;
 	}
 }
  .doc-content a {
@@ -2404,7 +2405,7 @@ h2 a.header-link {
       }
     }
 
-    li {position:relative; 
+    li {position:relative;
       ul.sub-dropdown {
         padding: 0px;
         margin: 0px;
@@ -2436,7 +2437,7 @@ h2 a.header-link {
 
       a {
     line-height: 1.8;
-        margin-left: -1px;       
+        margin-left: -1px;
         display: block;
           padding-left: 15px;
     line-height: 1.7;
@@ -2444,7 +2445,7 @@ h2 a.header-link {
     padding-bottom: 6px;
 
         i.fa.fa-angle-right {
-      
+
         }  &:hover {
           border-left: 1px solid #0d65b0;
         }
