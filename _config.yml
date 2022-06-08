@@ -135,7 +135,7 @@ permalink: /:title/
 feed:
   collections:
     posts:
-      path: "/index.xml"
+      path: "/fr/index.xml"
 
 # new variables to make Jekyll multilingual
 lang: fr
