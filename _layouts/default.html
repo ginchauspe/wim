@@ -63,11 +63,16 @@
      }
 
      function changeLanguageInURL(uri, lang) {
-       const reg = new RegExp("(\\/pages\\/((en)|(fr)))");
+       let reg = new RegExp("(\\/pages\\/((en)|(fr)))");
        if (uri.match(reg)) {
          return uri.replace(reg, '/pages/' + lang);
        } else {
-         return uri;
+         reg = new RegExp("\\/((en)|(fr))\\/");
+         if (uri.match(reg)) {
+           return uri.replace(reg, '/' + lang + '/');
+         } else {
+           return uri;
+         }
        }
      }
 
