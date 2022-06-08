@@ -8,3 +8,4 @@ package-lock.json
 /dist
 assets/css/style.min.css
 assets/js/build.min.js
+assets/css/app.min.css
