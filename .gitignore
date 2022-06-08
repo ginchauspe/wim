@@ -2,4 +2,10 @@ _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
-vendor
+Gemfile.lock
+node_modules
+package-lock.json
+/dist
+assets/css/style.min.css
+assets/js/build.min.js
+assets/css/app.min.css
