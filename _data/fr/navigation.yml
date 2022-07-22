@@ -1,18 +1,18 @@
 #Please use the main menu items under the "text"
 
 - text: Home
-  url: /
+  url: /fr
 - text: About Us
-  url: /pages/about
+  url: /pages/fr/about
 - text: FODEL
-  url: /pages/fodel
+  url: /pages/fr/fodel
 - text: Regional Info
-  url: /pages/regional
+  url: /pages/fr/regional
   submenu:
     - text: BOKE
-      url: /pages/boke
+      url: /pages/fr/boke
     - text: BOFA
-      url: /pages/bofa
+      url: /pages/fr/bofa
 #- text: Support
 #  url: /pages/support
 #- text: Blog
