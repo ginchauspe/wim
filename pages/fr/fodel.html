@@ -4,8 +4,33 @@ title: FODEL FR
 description: "Page for FODEL"
 keywords: "FODEL, wim, guinea"
 ---
+<head>
+  <script src="https://cdn.plot.ly/plotly-2.12.1.min.js"></script>
+</head>
+
 <div class="about-us-area bg-color1">
   TODO: Add FODEL content.
   <hr/>
   {{site.data.fr.fodel.testText}}
+
+  <div id="tester1" style="width:600px;height:450px;"></div>
+  <div id="tester2" style="width:600px;height:450px;"></div>
+
+  <script>
+    TESTER = document.getElementById('tester1');
+
+    var trace1 = {
+      x: ['Tanene', 'Sangarédi', 'Kanfarande', 'Kamsar', 'Koulabougni'],
+      y: [78, 77, 80, 80, 70],
+      marker: {
+        color: ['rgb(241,21,21)', 'rgba(84,222,38,0.8)', 'rgb(59,175,241)', 'rgb(243,212,20)', 'rgb(20,204,204)']
+      },
+      type: 'bar'
+    };
+    var data = [trace1];
+    var layout = {
+      title: 'FODEL BENEFICIARIES INVOLVEMENT - Women'
+    };
+    Plotly.newPlot(TESTER, data, layout);
+  </script>
 </div>

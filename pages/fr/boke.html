@@ -4,7 +4,61 @@ title: BOKE FR
 description: "Page for BOKE Region"
 keywords: "BOKE, wim, guinea"
 ---
+
+<head>
+  <script src="https://cdn.plot.ly/plotly-2.12.1.min.js"></script>
+</head>
+
 <div class="boke-region-area bg-color1">
   TODO: Add BOKE content.
   <hr/>
 </div>
+
+<div id="tester" style="width:600px;height:450px;"></div>
+<div id="tester2" style="width:600px;height:450px;"></div>
+
+<script>
+  let TESTER = document.getElementById('tester');
+  /*Plotly.newPlot(TESTER, [{
+    x: [1, 2, 3, 4, 5],
+    y: [1, 2, 4, 8, 16]
+  }], {
+    margin: {t: 0}
+  });*/
+
+  var trace = {
+    x: ['Tanene', 'Sangarédi', 'Kanfarande', 'Kamsar', 'Koulabougni'],
+    y: [60, 95, 77, 53, 89],
+    marker: {
+      color: ['#009560', '#007846', '#005c2d', '#004216', 'rgba(116,136,109,0.3)']
+    },
+    type: 'bar'
+  };
+  var data = [trace];
+  var layout = {
+    title: 'Number of women associations'
+  };
+  Plotly.newPlot(TESTER, data, layout);
+
+  let TESTER2 = document.getElementById('tester2');
+  /*Plotly.newPlot(TESTER, [{
+    x: [1, 2, 3, 4, 5],
+    y: [1, 2, 4, 8, 16]
+  }], {
+    margin: {t: 0}
+  });*/
+
+  var trace2 = {
+    x: ['Tougnifily', 'Doupourou', 'Tamita', 'Colia (Wakili)', 'Colia (Yètèmaly)'],
+    y: [83, 0, 9, 70, 0],
+    marker: {
+      color: ['#cf0821', '#f43d3a', '#ff6055', '#ff8171', '#ffa28e']
+    },
+    type: 'bar'
+  };
+  var data2 = [trace2];
+  var layout2 = {
+    title: 'Number of women associations'
+  };
+  Plotly.newPlot(TESTER2, data2, layout2);
+</script>
