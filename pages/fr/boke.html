@@ -14,51 +14,44 @@ keywords: "BOKE, wim, guinea"
   <hr/>
 </div>
 
-<div id="tester" style="width:600px;height:450px;"></div>
-<div id="tester2" style="width:600px;height:450px;"></div>
+<div id="numberOfWomenAssociationBoke" style="width:600px;height:450px;"></div>
+<div id="numberOfWomenAssociationBoffa" style="width:600px;height:450px;"></div>
 
 <script>
-  let TESTER = document.getElementById('tester');
-  /*Plotly.newPlot(TESTER, [{
-    x: [1, 2, 3, 4, 5],
-    y: [1, 2, 4, 8, 16]
-  }], {
-    margin: {t: 0}
-  });*/
+  const RED_SHADES = ['#cf0821', '#f43d3a', '#ff6055', '#ff8171', '#ffa28e'];
+  const GREEN_SHADES = ['#009560', '#007846', '#005c2d', '#004216', '#002a00'];
+  const BOKE_NAMES = ['Tanene', 'Sangarédi', 'Kanfarande', 'Kamsar', 'Koulabougni'];
+  const BOFFA_NAMES = ['Tougnifily', 'Doupourou', 'Tamita', 'Colia (Wakili)', 'Colia (Yètèmaly)'];
 
-  var trace = {
-    x: ['Tanene', 'Sangarédi', 'Kanfarande', 'Kamsar', 'Koulabougni'],
+  // Number of women associations (row 2).
+  const numberOfWomenAssociationBoke = document.getElementById('numberOfWomenAssociationBoke');
+  const numberOfWomenAssociationBokeTrace = {
+    x: BOKE_NAMES,
     y: [60, 95, 77, 53, 89],
     marker: {
-      color: ['#009560', '#007846', '#005c2d', '#004216', 'rgba(116,136,109,0.3)']
+      color: GREEN_SHADES
     },
     type: 'bar'
   };
-  var data = [trace];
-  var layout = {
+  const numberOfWomenAssociationBokeData = [numberOfWomenAssociationBokeTrace];
+  const numberOfWomenAssociationBokeLayout = {
     title: 'Number of women associations'
   };
-  Plotly.newPlot(TESTER, data, layout);
+  Plotly.newPlot(numberOfWomenAssociationBoke, numberOfWomenAssociationBokeData, numberOfWomenAssociationBokeLayout);
 
-  let TESTER2 = document.getElementById('tester2');
-  /*Plotly.newPlot(TESTER, [{
-    x: [1, 2, 3, 4, 5],
-    y: [1, 2, 4, 8, 16]
-  }], {
-    margin: {t: 0}
-  });*/
-
-  var trace2 = {
-    x: ['Tougnifily', 'Doupourou', 'Tamita', 'Colia (Wakili)', 'Colia (Yètèmaly)'],
+  // Number of women associations (row 2).
+  const numberOfWomenAssociationBoffa = document.getElementById('numberOfWomenAssociationBoffa');
+  const numberOfWomenAssociationBoffaTrace = {
+    x: BOFFA_NAMES,
     y: [83, 0, 9, 70, 0],
     marker: {
-      color: ['#cf0821', '#f43d3a', '#ff6055', '#ff8171', '#ffa28e']
+      color: RED_SHADES
     },
     type: 'bar'
   };
-  var data2 = [trace2];
-  var layout2 = {
+  const numberOfWomenAssociationBoffaData = [numberOfWomenAssociationBoffaTrace];
+  const numberOfWomenAssociationBoffaLayout = {
     title: 'Number of women associations'
   };
-  Plotly.newPlot(TESTER2, data2, layout2);
+  Plotly.newPlot(numberOfWomenAssociationBoffa, numberOfWomenAssociationBoffaData, numberOfWomenAssociationBoffaLayout);
 </script>
